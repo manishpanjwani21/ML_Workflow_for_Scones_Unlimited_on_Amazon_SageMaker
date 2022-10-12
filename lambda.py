@@ -44,7 +44,7 @@ import json
 import base64
 
 # setting the  environment variables
-ENDPOINT_NAME = 'image-classification-2022-10-11-13-21-53-986'
+ENDPOINT_NAME = 'image-classification-2022-10-11-21-32-03-080'
 # We will be using the AWS's lightweight runtime solution to invoke an endpoint.
 runtime= boto3.client('runtime.sagemaker')
 
@@ -73,7 +73,7 @@ InferenceConfidenceFilter : Lambda function tofiter inference results based on c
 import json
 
 
-THRESHOLD = .97
+THRESHOLD = .82
 
 def lambda_handler(event, context):
     # Get the inferences from the event
